@@ -1,6 +1,6 @@
 {
   "name": "capacitor-contact-manager",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A plugin for managing native phone contacts",
   "main": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -10,6 +10,7 @@
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build"
   },
+  "readme": "Readme.md",
   "author": "Chris Woolum",
   "license": "MIT",
   "dependencies": {
