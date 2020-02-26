@@ -9,11 +9,6 @@ export class ContactManagerWeb extends WebPlugin implements ContactManagerPlugin
     });
   }
 
-  async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
-    return options;
-  }
-
   async getContacts(options: { query?: string }): Promise<{ data: Contact[] }> {
     console.log(options.query);
     return new Promise(() => { });

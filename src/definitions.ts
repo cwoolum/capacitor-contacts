@@ -5,8 +5,6 @@ declare module "@capacitor/core" {
 }
 
 export interface ContactManagerPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
-
   /**
    * A method use for fetching contacts. These can be optionally filtered.
    * @param options Optional parameter for filtering clients.
@@ -15,6 +13,9 @@ export interface ContactManagerPlugin {
 }
 
 export interface ContactsFilterOptions {
+  /**
+   * The name of the contact you wish to search for.
+   */
   query?: String;
 }
 
