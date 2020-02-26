@@ -1,5 +1,7 @@
 # Capacitor Contact Manager
 
+![npm](https://img.shields.io/npm/v/capacitor-contact-manager)
+
 This is a project for managing contacts in Capacitor Apps.
 
 ## Features
@@ -10,3 +12,18 @@ This is a project for managing contacts in Capacitor Apps.
 | Retrieve filtered list of contacts |     | ✅       |
 | Create Contact                     |     |         |
 | Edit Contact                       |     |         |
+
+## Installation
+``` bash
+npm i capacitor-contact-manager
+```
+
+## Usage
+
+``` javascript
+import { Plugins } from '@capacitor/core';
+const { ContactManager } = Plugins;
+
+const { data } = await ContactManager.getContacts({ query: searchTerm });
+
+```
