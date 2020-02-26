@@ -1,5 +1,5 @@
 {
-  "name": "capacitor-contacts",
+  "name": "capacitor-contact-manager",
   "version": "0.0.1",
   "description": "A plugin for managing native phone contacts",
   "main": "dist/esm/index.js",

@@ -1,5 +1,5 @@
 import { WebPlugin } from '@capacitor/core';
-import { ContactManagerPlugin } from './definitions';
+import { ContactManagerPlugin, Contact } from './definitions';
 
 export class ContactManagerWeb extends WebPlugin implements ContactManagerPlugin {
   constructor() {
@@ -9,9 +9,13 @@ export class ContactManagerWeb extends WebPlugin implements ContactManagerPlugin
     });
   }
 
-  async echo(options: { value: string }): Promise<{value: string}> {
+  async echo(options: { value: string }): Promise<{ value: string }> {
     console.log('ECHO', options);
     return options;
+  }
+
+  async getContacts(): Promise<{ data: Contact[] }> {
+    return new Promise(() => { });
   }
 }
 

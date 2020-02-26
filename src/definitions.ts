@@ -7,3 +7,11 @@ declare module "@capacitor/core" {
 export interface ContactManagerPlugin {
   echo(options: { value: string }): Promise<{value: string}>;
 }
+
+
+export interface Contact{
+  name: string;
+  id: string;
+  emails: string[];
+  phoneNumbers: string[];
+}
