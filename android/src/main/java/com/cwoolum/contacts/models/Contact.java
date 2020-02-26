@@ -14,6 +14,7 @@ public class Contact {
 
     public Contact(){
         this.phoneNumbers = new ArrayList<>();
+        this.emails = new ArrayList<>();
     }
 
     public Contact(String name, String id){

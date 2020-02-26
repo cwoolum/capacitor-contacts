@@ -5,11 +5,12 @@ declare module "@capacitor/core" {
 }
 
 export interface ContactManagerPlugin {
-  echo(options: { value: string }): Promise<{value: string}>;
+  echo(options: { value: string }): Promise<{ value: string }>;
+  getContacts(options: { query?: string }): Promise<{ data: Contact[] }>;
 }
 
 
-export interface Contact{
+export interface Contact {
   name: string;
   id: string;
   emails: string[];
