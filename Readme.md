@@ -27,3 +27,5 @@ const { ContactManager } = Plugins;
 const { data } = await ContactManager.getContacts({ query: searchTerm });
 
 ```
+
+See the full docs [here](https://cwoolum.github.io/capacitor-contacts/)
