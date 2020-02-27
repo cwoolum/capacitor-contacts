@@ -8,8 +8,8 @@ This is a project for managing contacts in Capacitor Apps.
 
 | Feature                            | iOS | Android |
 |------------------------------------|-----|---------|
-| Retrieve list of contacts          |     | ✅       |
-| Retrieve filtered list of contacts |     | ✅       |
+| Retrieve list of contacts          |  ✅    | ✅ |
+| Retrieve filtered list of contacts |  ✅    | ✅ |
 | Create Contact                     |     |         |
 | Edit Contact                       |     |         |
 

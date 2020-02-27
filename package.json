@@ -1,6 +1,6 @@
 {
   "name": "capacitor-contact-manager",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A plugin for managing native phone contacts",
   "main": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -17,10 +17,11 @@
     "@capacitor/core": "latest"
   },
   "devDependencies": {
-    "rimraf": "^3.0.0",
-    "typescript": "^3.2.4",
+    "@capacitor/android": "latest",
     "@capacitor/ios": "latest",
-    "@capacitor/android": "latest"
+    "rimraf": "^3.0.0",
+    "typedoc": "^0.16.10",
+    "typescript": "^3.2.4"
   },
   "files": [
     "dist/",
