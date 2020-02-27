@@ -2,6 +2,8 @@ import Foundation
 import Capacitor
 import Contacts
 
+typealias JSObject = [String:Any]
+
 /**
  * Please read the Capacitor iOS Plugin Development Guide
  * here: https://capacitor.ionicframework.com/docs/plugins/ios
@@ -13,11 +15,18 @@ public class ContactManager: CAPPlugin {
         let query = call.getString("query") ?? ""
         
         let contacts = filterContacts(query: query)
+
+        var returnArray: [[String: Any]] = []
         
-        call.resolve([
-            "data": contacts
-        ])
+        contacts.forEach { (contact) in
+            returnArray.append(contact.toDictionary())
+        }
+            
+        var response = JSObject()
+        response["data"] = returnArray
         
+        call.resolve(response)
+       
     }
 
     func filterContacts(query: String) -> [Contact] {

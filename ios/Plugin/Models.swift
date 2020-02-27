@@ -25,3 +25,25 @@ class Contact {
         self.emails = emails
     }
 }
+
+
+extension Contact : Serializable {
+    var properties: Array<String> {
+        return ["name", "id", "emails", "phoneNumbers"]
+    }
+
+    func valueForKey(key: String) -> Any? {
+        switch key {
+        case "name":
+            return name
+        case "id":
+            return id
+        case "emails":
+            return emails
+        case "phoneNumbers":
+            return phoneNumbers
+        default:
+            return nil
+        }
+    }
+}

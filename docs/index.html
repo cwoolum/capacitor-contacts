@@ -105,8 +105,12 @@
 					<h2>Installation</h2>
 				</a>
 				<pre><code class="language-bash">npm i capacitor-contact-manager</code></pre>
+				<a href="#ios-only" id="ios-only" style="color: inherit; text-decoration: none;">
+					<h3>iOS Only</h3>
+				</a>
+				<p>In your <code>info.plist</code>, be sure to add a message for <code>NSContactsUsageDescription</code></p>
 				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
-					<h2>Usage</h2>
+					<h3>Usage</h3>
 				</a>
 				<pre><code class="language-javascript"><span class="hljs-keyword">import</span> { Plugins } <span class="hljs-keyword">from</span> <span class="hljs-string">'@capacitor/core'</span>;
 <span class="hljs-keyword">const</span> { ContactManager } = Plugins;

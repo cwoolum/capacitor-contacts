@@ -18,7 +18,10 @@ This is a project for managing contacts in Capacitor Apps.
 npm i capacitor-contact-manager
 ```
 
-## Usage
+### iOS Only
+In your `info.plist`, be sure to add a message for `NSContactsUsageDescription`
+
+### Usage
 
 ``` javascript
 import { Plugins } from '@capacitor/core';

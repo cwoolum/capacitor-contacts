@@ -1,6 +1,6 @@
 {
   "name": "capacitor-contact-manager",
-  "version": "0.2.0",
+  "version": "0.2.4",
   "description": "A plugin for managing native phone contacts",
   "main": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -27,7 +27,7 @@
     "dist/",
     "ios/",
     "android/",
-    "CapacitorContacts.podspec"
+    "CapacitorContactManager.podspec"
   ],
   "keywords": [
     "capacitor",

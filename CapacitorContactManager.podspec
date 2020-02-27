@@ -1,6 +1,6 @@
 
   Pod::Spec.new do |s|
-    s.name = 'CapacitorContacts'
+    s.name = 'CapacitorContactManager'
     s.version = '0.0.1'
     s.summary = 'A plugin for managing native phone contacts'
     s.license = 'MIT'
